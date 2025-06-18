@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: phoneinfoga-api
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python phone_tower_api.py"
+    envVars:
+      - key: OPENCELLID_API_KEY
+        value: pk.cbcb78f7f60d07fa5820220da051cdad
